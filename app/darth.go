@@ -9,6 +9,10 @@ func Darth(c *router.Context, second, third string) {
 		handleRegister(c)
 		return
 	}
+	if second == "login" && third == "" && c.Method == "GET" {
+		handleLogin(c)
+		return
+	}
 	if second == "register" && third == "" && c.Method == "POST" {
 		router.HandleCreateUserAutoForm(c, "")
 		return
@@ -20,4 +24,8 @@ func Darth(c *router.Context, second, third string) {
 func handleRegister(c *router.Context) {
 	send := map[string]any{}
 	c.SendContentInLayout("register.html", send, 200)
+}
+func handleRegister(c *router.Context) {
+	send := map[string]any{}
+	c.SendContentInLayout("login.html", send, 200)
 }
