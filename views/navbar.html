@@ -10,10 +10,13 @@
       <div class="navbar-center flex hidden md:block ">
       </div>
       <div class="navbar-end ">
-        <div class="hidden md:block flex space-x-3 ">
+        <div class="hidden md:block flex space-x-6 ">
           <a href="/frame/faq" class="link link-hover ">
             FAQ
           </a>
+          {{ if .user }}
+            <a href="/" id="logout">logout</a>
+          {{ end }}
         </div>
       </div>
     </div>

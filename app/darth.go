@@ -21,6 +21,10 @@ func Darth(c *router.Context, second, third string) {
 		router.HandleCreateSessionAutoForm(c)
 		return
 	}
+	if second == "logout" && third == "" && c.Method == "DELETE" {
+		router.DestroySession(c)
+		return
+	}
 	if router.NotLoggedIn(c) {
 		return
 	}
