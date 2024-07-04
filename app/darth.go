@@ -25,7 +25,7 @@ func handleRegister(c *router.Context) {
 	send := map[string]any{}
 	c.SendContentInLayout("register.html", send, 200)
 }
-func handleRegister(c *router.Context) {
+func handleLogin(c *router.Context) {
 	send := map[string]any{}
 	c.SendContentInLayout("login.html", send, 200)
 }
