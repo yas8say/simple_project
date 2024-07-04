@@ -40,7 +40,7 @@ func main() {
 		router.EmbeddedAssets = embeddedAssets
 		r := router.NewRouter("DATABASE_URL", embeddedFile)
 
-		// r.Paths["/"] = app.Welcome   // Adding this line
+		r.Paths["/"] = app.Welcome   // Adding this line
 		r.Paths["darth"] = app.Darth // Adding this line
 		r.Paths["markup"] = router.Markup
 		//r.Paths["aademo_test"] = app.aademo_test

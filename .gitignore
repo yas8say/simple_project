@@ -4,6 +4,5 @@ node_modules
 package*.json
 json.wasm.gz
 .DS_Store
-views
 tail.min.css
     
