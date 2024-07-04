@@ -1,0 +1,31 @@
+  <div class="p-0  ">
+    {{ template "navbar" . }}
+    <div class="flex justify-center mt-32 ">
+      <div class=" ">
+        <div class="text-center ">
+          <h1 class="text-5xl font-bold ">
+            Register
+          </h1>
+        </div>
+        <form id="register" class="mt-6 space-y-3 " method="POST">
+          <div class="">
+            <input id="email" placeholder="email" autofocus="true" class="input input-primary "  />
+          </div>
+          <div class="">
+            <input id="password" placeholder="password" class="input input-primary "  />
+          </div>
+          <div class="flex justify-center ">
+            <input type="submit" value="Go" class="btn btn-primary "  />
+          </div>
+        </form>
+        <div class="mt-3 text-center ">
+          <span class="">
+            Already have account?
+          </span>
+          <a class="underline " href="/space/login">
+            Login
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
