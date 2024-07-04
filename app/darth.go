@@ -32,6 +32,10 @@ func Darth(c *router.Context, second, third string) {
 		handleStart(c)
 		return
 	}
+	if second == "new-doc" && third == "" && c.Method == "GET" {
+		handleNewDoc(c)
+		return
+	}
 
 	c.NotFound = true
 }
@@ -47,4 +51,8 @@ func handleLogin(c *router.Context) {
 func handleStart(c *router.Context) {
 	send := map[string]any{}
 	c.SendContentInLayout("start.html", send, 200)
+}
+func handleNewDoc(c *router.Context) {
+	send := map[string]interface{}{}
+	c.SendContentInLayout("new_doc.html", send, 200)
 }

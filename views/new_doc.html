@@ -1,19 +1,13 @@
 <!-- new_doc.html -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Document</title>
-    <!-- Add your CSS and JS links here -->
-</head>
-<body>
-    <h1>Create a New Document</h1>
-    <form action="/save-doc" method="post">
-        <textarea name="content" rows="20" cols="80" placeholder="Enter your document content here..."></textarea>
-        <br>
-        <button type="submit">Save</button>
+<div class="container">
+    <h1>New Document</h1>
+    <p>Create your new document here:</p>
+    
+    <form action="/darth/save" method="POST">
+        <textarea name="document_content" rows="10" cols="50"></textarea><br><br>
+        <input type="submit" value="Save Document">
     </form>
-</body>
-</html>
+
+    <!-- Optional: Add more content or functionality -->
+</div>

@@ -43,6 +43,7 @@ func main() {
 		r.Paths["/"] = app.Welcome   // Adding this line
 		r.Paths["darth"] = app.Darth // Adding this line
 		r.Paths["markup"] = router.Markup
+		r.Paths["darth/new-doc"] = app.Darth
 		//r.Paths["aademo_test"] = app.aademo_test
 		//r.Paths["api"] = app.HandleApi
 		//r.Paths["login"] = app.Login
