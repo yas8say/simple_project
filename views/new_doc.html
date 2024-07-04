@@ -1,13 +1,17 @@
-<!-- new_doc.html -->
+<div class="p-0">
+  {{ template "navbar" . }}
+  <div class="flex flex-col md:flex-row space-x-9 items-start justify-center">
 
-<div class="container">
-    <h1>New Document</h1>
-    <p>Create your new document here:</p>
-    
-    <form action="/darth/save" method="POST">
+    <div class="container">
+      <h1>New Document</h1>
+      <p>Create your new document here:</p>
+
+      <form action="/darth/save" method="POST">
         <textarea name="document_content" rows="10" cols="50"></textarea><br><br>
         <input type="submit" value="Save Document">
-    </form>
+      </form>
 
-    <!-- Optional: Add more content or functionality -->
+      <!-- Optional: Add more content or functionality -->
+    </div>
+  </div>
 </div>
