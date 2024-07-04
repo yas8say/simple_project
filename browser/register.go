@@ -12,7 +12,7 @@ func RegisterEvents() {
 		Global.Location.Set("href", "/darth/start")
 	}
 	afterLogin := func(id int64) {
-		Global.Location.Set("href", "/aademo/start")
+		Global.Location.Set("href", "/darth/start")
 	}
 	if Global.Start == "start.html" {
 	} else if Global.Start == "login.html" {
